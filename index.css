@@ -1,0 +1,351 @@
+@font-face {
+  font-family: 'Gin';
+  src: url(fonte/GIN_AND_SODA_PERSONAL_USE.ttf); /*URL to font*/
+}
+@font-face {
+  font-family: 'LED';
+  src: url(fonte/LED_Dot-Matrix.ttf); /*URL to font*/
+}
+body {
+  overflow: hidden;
+  background-color: #eebac1;
+}
+#can {
+  width: 100vw;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+video {
+  border:2px solid rgb(120, 0, 233);
+  width: 100%;
+}
+
+#intro {
+  position: fixed;
+  top: 2vh;
+  left: 53.5vw;
+  font-size: 1.2vw;
+  font-family: "Poppins", monospace;
+  color:rgba(233, 89, 89, 0.649);
+  /* animation: letreiro 30s infinite; */
+  /* white-space: nowrap; */
+}
+/* @keyframes letreiro {
+  0% {left: 135vw}
+  100% {left: -35vw;}
+} */
+
+
+
+/* SOCIAL BOX */
+
+.icone {
+  font-size: 3.3vw;
+  z-index: 4;
+  position: relative;
+
+  height: auto;
+  left: 37.3%;
+  opacity: 0.6;
+}
+.icone:hover {
+  opacity: 1;
+}
+.icone:active {
+  transform:scale(0.9);
+}
+
+#instaIco {
+  color: #c13584;
+}
+#linkIco {
+  color: #0077b5;
+}
+#gitIco {
+  color: #bd2c00
+}
+#zapIco {
+  color: #13c554
+}
+
+/* PINTURA */
+
+#pinturaBox {
+  margin-left: 30%;
+  position: relative;
+
+  width: 11.9vw;
+  height: 14.8vw;
+}
+#pintura {
+  margin-left: 30%;
+  left: 10vw;
+  top: 3vw;
+
+  width: 12vw;
+  height: auto;
+
+  box-shadow: 2px 11px 43px -8px rgba(233, 89, 89, 0.849);
+  z-index: 2;
+  /* animation: pOut 0.2s ease; */
+}
+@keyframes pIn {
+  0%{box-shadow: 2px 11px 43px -8px rgba(233, 89, 89, 0.849);}
+  50%{box-shadow: 3px 12px 44px -6px rgba(233, 89, 89, 0.938);}
+  100%{box-shadow: 4px 13px 45px -4px rgba(233, 89, 89, 1);}
+}
+@keyframes pOut {
+  0%{box-shadow: 4px 13px 45px -4px rgba(233, 89, 89, 1);}
+  50%{box-shadow: 3px 12px 44px -6px rgba(233, 89, 89, 0.938);}
+  100%{box-shadow: 2px 11px 43px -8px rgba(233, 89, 89, 0.849);}
+}
+#pintura:hover {
+  animation: pIn 0.2s ease;
+  box-shadow: 4px 13px 45px -4px rgba(233, 89, 89, 1);
+}
+#eye1 {
+  position: absolute;
+  top: 34.2%;
+  left: 64.3%;
+  z-index: 2;
+  width: 0.57vw;
+}
+#eye2 {
+  position: absolute;
+  top: 34.8%;
+  left: 83.5%;
+  z-index: 2;
+  width: 0.55vw;
+}
+
+/* FIG CAPTION DESCANSO */
+
+#descansoTxt {
+  width: 30vw;
+  margin-left: 20%;
+  margin-top: 5%;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  text-justify: inter-word;
+  color: rgb(120, 0, 233);
+}
+
+
+/* PROJETOS */
+
+nav {
+  position: fixed;
+  top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1projs {
+  display: flex;
+  flex-direction: row;
+}
+
+.projH2 {
+  font-family: 'Syncopate';
+  /* font-family: 'Gin', sans-serif; */
+  color:rgb(120, 0, 233);
+  font-size: 4vw;
+  margin-left: 1vw;
+  /* padding-bottom: 0.05em; */
+  margin-bottom: 0px;
+  line-height: 90%;
+  z-index: 10;
+}
+.h2hover:hover {
+  transition: all 120ms linear;
+  font-size: 4.7vw;
+  text-transform:uppercase;
+  color:antiquewhite;
+}
+
+.emconstrucao {
+  color:rgb(186, 133, 235)
+}
+#projectsContainer{
+  position: fixed;
+  top: 22vw;
+}
+
+/* ICONES PROJETOS */
+
+.ativos {
+  width: auto;
+  height: 3vw;
+  margin-left: 2.5vw;
+  margin-top: 10px
+}
+
+/* PROJETOS ABERTOS */
+
+.imgB {
+  position: fixed;
+  left: 51vw;
+  top: 3.8vw;
+  width: 40vw;
+  z-index: 2;
+}
+
+.imgB2 {
+  position: fixed;
+  left: 46vw;
+  top: 4.9vw;
+  width: 47vw;
+  z-index: 2;
+}
+
+.desc {
+  left: 58vw;
+  top: 33vw;
+
+  width: 100%;
+  margin-top: 5%;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  text-justify: inter-word;
+  color: rgb(120, 0, 233);
+}
+
+
+.emconstrucao.imgB {
+  opacity: 0
+}
+
+/* DESENHO */
+
+path {
+  fill: none;
+  stroke: #3500d375;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+#can {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+/* grain */
+
+.grainy {
+  height: 100vh;
+  background-image: url("assts/graintxt.jpg");
+}
+
+.grainy:after {
+  animation: grain 5s steps(10) infinite;
+  background-image: url("assets/graintxt.png");
+  content: "";
+  height: 280%;
+  left: -50%;
+  opacity: 0.2;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
+/* CUSTOM CURSOR */
+ 
+/* * {
+  cursor: none;
+  margin:0;
+  padding:0;
+}
+
+.cursor {
+  content:"";
+  position:absolute;
+  z-index:999;
+  top:var(--y);
+  left:var(--x);
+  right:0;
+  bottom:0; 
+  width:4em;
+  height:4em;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:rgb(0, 255, 85);
+  mix-blend-mode:difference;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+a {
+  cursor: none;
+}
+
+.hover-this {
+  transition: all 0.3s ease;
+}
+
+span {
+  display: inline-block;
+  font-family: 'Russo One', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+}
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease;
+}
+
+.hover-this:hover ~ .cursor {
+  transform:translate(-50%, -50%) scale(8);
+}
+
+@media(min-width: 900px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media(max-width: 900px) {
+  nav {
+    top: 30%;
+  }
+  
+  .hover-this {
+    width: 100%;
+    padding: 20px 0;
+    display: inline-block;
+  }
+}
