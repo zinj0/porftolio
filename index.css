@@ -1,242 +1,351 @@
-<!DOCTYPE html>
-<html lang=pt-br>
+@font-face {
+  font-family: 'Gin';
+  src: url(fonte/GIN_AND_SODA_PERSONAL_USE.ttf); /*URL to font*/
+}
+@font-face {
+  font-family: 'LED';
+  src: url(fonte/LED_Dot-Matrix.ttf); /*URL to font*/
+}
+body {
+  overflow: hidden;
+  background-color: #eebac1;
+}
+#can {
+  width: 100vw;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+video {
+  border:2px solid rgb(120, 0, 233);
+  width: 100%;
+}
 
-<head>
+#intro {
+  position: fixed;
+  top: 2vh;
+  left: 53.5vw;
+  font-size: 1.2vw;
+  font-family: "Poppins", monospace;
+  color:rgba(233, 89, 89, 0.649);
+  /* animation: letreiro 30s infinite; */
+  /* white-space: nowrap; */
+}
+/* @keyframes letreiro {
+  0% {left: 135vw}
+  100% {left: -35vw;}
+} */
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
 
-  <!-- fontes google-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hammersmith+One&family=Lalezar&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Ramabhadra&family=Secular+One&family=Syncopate:wght@700&display=swap" rel="stylesheet">
 
-  <!--bootstrap jquery-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+/* SOCIAL BOX */
 
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/12d84252e6.js" crossorigin="anonymous"></script>
+.icone {
+  font-size: 3.3vw;
+  z-index: 4;
+  position: relative;
+
+  height: auto;
+  left: 37.3%;
+  opacity: 0.6;
+}
+.icone:hover {
+  opacity: 1;
+}
+.icone:active {
+  transform:scale(0.9);
+}
+
+#instaIco {
+  color: #c13584;
+}
+#linkIco {
+  color: #0077b5;
+}
+#gitIco {
+  color: #bd2c00
+}
+#zapIco {
+  color: #13c554
+}
+
+/* PINTURA */
+
+#pinturaBox {
+  margin-left: 30%;
+  position: relative;
+
+  width: 11.9vw;
+  height: 14.8vw;
+}
+#pintura {
+  margin-left: 30%;
+  left: 10vw;
+  top: 3vw;
+
+  width: 12vw;
+  height: auto;
+
+  box-shadow: 2px 11px 43px -8px rgba(233, 89, 89, 0.849);
+  z-index: 2;
+  /* animation: pOut 0.2s ease; */
+}
+@keyframes pIn {
+  0%{box-shadow: 2px 11px 43px -8px rgba(233, 89, 89, 0.849);}
+  50%{box-shadow: 3px 12px 44px -6px rgba(233, 89, 89, 0.938);}
+  100%{box-shadow: 4px 13px 45px -4px rgba(233, 89, 89, 1);}
+}
+@keyframes pOut {
+  0%{box-shadow: 4px 13px 45px -4px rgba(233, 89, 89, 1);}
+  50%{box-shadow: 3px 12px 44px -6px rgba(233, 89, 89, 0.938);}
+  100%{box-shadow: 2px 11px 43px -8px rgba(233, 89, 89, 0.849);}
+}
+#pintura:hover {
+  animation: pIn 0.2s ease;
+  box-shadow: 4px 13px 45px -4px rgba(233, 89, 89, 1);
+}
+#eye1 {
+  position: absolute;
+  top: 34.2%;
+  left: 64.3%;
+  z-index: 2;
+  width: 0.57vw;
+}
+#eye2 {
+  position: absolute;
+  top: 34.8%;
+  left: 83.5%;
+  z-index: 2;
+  width: 0.55vw;
+}
+
+/* FIG CAPTION DESCANSO */
+
+#descansoTxt {
+  width: 30vw;
+  margin-left: 20%;
+  margin-top: 5%;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  text-justify: inter-word;
+  color: rgb(120, 0, 233);
+}
+
+
+/* PROJETOS */
+
+nav {
+  position: fixed;
+  top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.h1projs {
+  display: flex;
+  flex-direction: row;
+}
+
+.projH2 {
+  font-family: 'Syncopate';
+  /* font-family: 'Gin', sans-serif; */
+  color:rgb(120, 0, 233);
+  font-size: 4vw;
+  margin-left: 1vw;
+  /* padding-bottom: 0.05em; */
+  margin-bottom: 0px;
+  line-height: 90%;
+  z-index: 10;
+}
+.h2hover:hover {
+  transition: all 120ms linear;
+  transform: scale(1.2);
+  text-transform:uppercase;
+  color:antiquewhite;
+}
+
+.emconstrucao {
+  color:rgb(186, 133, 235)
+}
+#projectsContainer{
+  position: fixed;
+  top: 22vw;
+}
+
+/* ICONES PROJETOS */
+
+.ativos {
+  width: auto;
+  height: 3vw;
+  margin-left: 2.5vw;
+  margin-top: 10px
+}
+
+/* PROJETOS ABERTOS */
+
+.imgB {
+  position: fixed;
+  left: 51vw;
+  top: 3.8vw;
+  width: 40vw;
+  z-index: 2;
+}
+
+.imgB2 {
+  position: fixed;
+  left: 46vw;
+  top: 4.9vw;
+  width: 47vw;
+  z-index: 2;
+}
+
+.desc {
+  left: 58vw;
+  top: 33vw;
+
+  width: 100%;
+  margin-top: 5%;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-align: justify;
+  text-justify: inter-word;
+  color: rgb(120, 0, 233);
+}
+
+
+.emconstrucao.imgB {
+  opacity: 0
+}
+
+/* DESENHO */
+
+path {
+  fill: none;
+  stroke: #3500d375;
+  stroke-width: 5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+#can {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+/* grain */
+
+.grainy {
+  height: 100vh;
+  background-image: url("assts/graintxt.jpg");
+}
+
+.grainy:after {
+  animation: grain 5s steps(10) infinite;
+  background-image: url("assets/graintxt.png");
+  content: "";
+  height: 280%;
+  left: -50%;
+  opacity: 0.2;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
+/* CUSTOM CURSOR */
+ 
+/* * {
+  cursor: none;
+  margin:0;
+  padding:0;
+}
+
+.cursor {
+  content:"";
+  position:absolute;
+  z-index:999;
+  top:var(--y);
+  left:var(--x);
+  right:0;
+  bottom:0; 
+  width:4em;
+  height:4em;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:rgb(0, 255, 85);
+  mix-blend-mode:difference;
+} */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+a {
+  cursor: none;
+}
+
+.hover-this {
+  transition: all 0.3s ease;
+}
+
+span {
+  display: inline-block;
+  font-family: 'Russo One', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 36px;
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: transform 0.1s linear;
+}
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  padding: 0.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  transition: transform 0.3s ease;
+}
+
+.hover-this:hover ~ .cursor {
+  transform:translate(-50%, -50%) scale(8);
+}
+
+@media(min-width: 900px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media(max-width: 900px) {
+  nav {
+    top: 30%;
+  }
   
-  <!--FOLHA DE ESTILO-->
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-
-  <title>P̷O̷R̷T̷F̷O̷L̷I̷O̷</title>
-</head>
-
-<body>
-
-  <canvas id="can"></canvas>
-  <div class="grainy"></div>
-  <span class="cursor"></span>
-  <p id="intro">>>PORTFÓLIO DIR.ARTE & DESIGN GUSTAVO POESTER<<</p>
-  <!-- Voilá mon portefeuille! -->
-
-
-  <div id="projectsContainer">
-    <nav>
-    <a href="https://gabrielapoester.com" target="_blank" class="h1projs">
-      <img src="assets/notebook.png" alt="icone teatro" class="ativos">
-      <h2 id="sitea" class="projH2 emconstrucao">site atriz</h2>
-    </a>
-    <a href="https://zinj0.github.io/to_inspire/" target="_blank" onmouseenter="toIn()" class="h1projs">
-      <img src="assets/notebook.png" alt="icone teatro" class="ativos" onmouseleave="toOut()" >
-      <h2 id="toinsp" class="projH2 h2hover">to inspire:</h2>
-    </a>
-    <a href="https://zinj0.github.io/galeria/" target="_blank" onmouseenter="gIn()" onmouseleave="gOut()" class="h1projs">
-      <img src="assets/notebook.png" alt="icone teatro" class="ativos">
-    <h2 id="galeri" class="projH2 h2hover" >galeria</h2>
-    </a>
-    <a href="" target="_blank" onmouseenter="pIn()" onmouseleave="pOut()" class="h1projs">
-      <img src="assets/notebook.png" alt="icone teatro" class="ativos">
-      <h2 id="portf" class="projH2 h2hover">portfolio</h2>
-    </a>
-    <a href="" target="_blank" onmouseenter="ditIn()" onmouseleave="ditOut()" class="h1projs">
-      <img src="assets/notebook.png" alt="icone teatro" class="ativos">
-      <h2 id="deliver" class="projH2 h2hover">deliverit</h2>
-    </a>
-    <a href="https://zinj0.github.io/ninfomaniaca2/" target="_blank" onmouseenter="ninIn()" onmouseleave="ninOut()" class="h1projs">
-      <img src="assets/notebook.png" alt="icone teatro" class="ativos">
-      <h2 id="ninfo" class="projH2 h2hover">ninfomaniaca</h2>
-    </a>
-    <a href="https://www.facebook.com/caosmoscas/" target="_blank" onmouseenter="mIn()" onmouseleave="mOut()" class="h1projs">
-      <img src="assets/teatro.png" alt="icone teatro" class="ativos">
-      <h2 id="moscas" class="projH2 h2hover">moscas</h2>
-    </a>
-
-    <a href="https://open.spotify.com/playlist/1LsxIdiK8kDZMEibLuBLAt" target="_blank" onmouseenter="sdIn()" onmouseleave="sdOut()" class="h1projs">
-      <img src="assets/camera.png" alt="icone teatro" class="ativos">
-      <h2 id="soundlights" class="projH2 h2hover">soundlights</h2>
-    </a>
-
-  <a href="https://www.imdb.com/title/tt13334052/" target="_blank" onmouseenter="anIn()" onmouseleave="anOut()" class="h1projs">
-    <img src="assets/camera.png" alt="icone teatro" class="ativos">
-    <h2 id="ana" class="projH2 h2hover">ana.s/ título</h2>
-  </a>
-
-    <a href="https://www.imdb.com/title/tt9893572/" target="_blank" onmouseenter="neIn()" onmouseleave="neOut()" class="h1projs">
-      <img src="assets/camera.png" alt="icone teatro" class="ativos">
-      <h2 id="necro" class="projH2 h2hover">necrópolis</h2>
-    </a> 
-
-    <a href="https://www.instagram.com/micuadrado/" target="_blank" onmouseenter="cuIn()" onmouseleave="cuOut()" class="h1projs">
-      <img src="assets/notebook.png" alt="icone teatro" class="ativos">
-      <h2 id="micu" class="projH2 h2hover">mi cuadrado</h2>
-    </a>
-
-
-
-    </nav>
-  </div>
-
-  <div id="boxProjAbertos">
-
-    <div id="telaDescanso" class="imgB2 aberto">
-
-      <figure id="pinturaBox">
-        <img id="pintura" class="animaAbre" src="assets/PERFIL SITE.png">
-        <img id="eye1" class="eye" src="assets/EYE1.png">
-        <img id="eye2" class="eye" src="assets/EYE1.png">
-      </figure> 
-      
-      <div id="descansoTxt"><p>&#127917; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod at enim eget suscipit. Aliquam vestibulum, velit sed ornare blandit, sapien arcu maximus velit, ac porta duerplacerat fermentum odio porta vitae. Pellentesque non placerat orci, semper varius nisi. Etiam vel augue finibus, euismod quam ut, rutrum tortor.</p></div>
-
-      <div id="socialBox">
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/gupoester/" rel="external" target="_blank">
-          <i  id="instaIco" class="fab fa-instagram-square icone"></i>
-        </a>
-        <!-- Linkedin -->
-        <a href="https://www.linkedin.com/in/gupoester" rel="external" target="_blank">
-          <i id="linkIco" class="fab fa-linkedin icone"></i>
-        </a>
-        <!-- Github -->
-        <a href="https://github.com/zinj0" rel="external" target="_blank">
-          <i id="gitIco" class="fab fa-github-square icone"></i>
-        </a>
-        <!-- Whatsapp -->
-        <a href="https://wa.me/5551999333537" rel="external" target="_blank">
-          <i id="zapIco" class="fa-brands fa-whatsapp-square icone"></i>
-        </a>
-      </div>
-
-    </div>
-    
-
-
-
-    <!-- <div id="vAtriz" class="imgB">
-    <video  class="imgB emconstrucao" autoplay muted loop>
-        <source src="assets/atrizrec.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <p class="desc">&#127917; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod at enim eget suscipit. Aliquam vestibulum, velit sed ornare blandit, sapien arcu maximus velit, ac porta duerplacerat fermentum odio porta vitae. Pellentesque non placerat orci, semper varius nisi. Etiam vel augue finibus, euismod quam ut, rutrum tortor.
-    </p>
-    </div> -->
-
-  
-    
-    <div id="vToInsp" class="imgB fechado">
-    <video   autoplay muted loop>
-      <source src="assets/to_inspireRED_cut.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p class="desc">&#127917; To inspire é uma página que criei com o objetivo de trazer referencia e inspiração pictórica através de imagens aleatórias de obras de arte. Os milhares de trabalhos disponíveis são parte da incrível catalogação do banco de dados do Museu de Arte de Chicago.<br><br> O círculo, em espiral, giratório é uma escolha estética que ressalta o universo (quase) infinito que o usuário acessa. A interface de usuário dispensa apresentações e tenta resumir toda a informação e usabilidade no próprio cursor, que, simulando o ato do jogar peão, roda para acessar o abismo de possibilidades imagéticas.<br><br>Além disso, a página foi desenvolvida principalmente em JavaScript, CSS, HTML(jsx) dentro do framework React.     
-    </p>
-    </div>
-
-    <div id="vGaleria" class="imgB fechado">
-    <video  autoplay muted loop>
-      <source src="assets/galeria_vid.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <p class="desc">&#127917; Galeria é uma interface que dispõe imagens em interação com a movimentação do cursor do usuário. A experimento é sobretudo um treino que explora as possibilidades de disposição de imagens no meio digital utilizando HTML, CSS, JavaScript e a biblioteca de ferramentas de animação GreenSock.
-    </p>
-    </div>
-
-    <div id="vAna" class="imgB fechado">
-      <video  autoplay muted loop>
-        <source src="assets/ana_vid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <p class="desc">Ana. Sem Título é um longametragem (road-movie) dirigido por Lúcia Murat (<i>Quase Dois Irmãos</i>) e produzido por Taiga Filmes, que se passa em diversas cidades da américa latina. No longa trabalhei como assistente da diretora de arte Manuela Falcão (<i>Tinta Bruta</i>) onde idealizamos e montamos diversos cenários, objetos e material gráfico.
-      </p>
-      </div>
-
-      <div id="vNecro" class="imgB fechado">
-        <video  autoplay muted loop>
-          <source src="assets/necro_vid.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <p class="desc">Necrópolis é uma série da VERTE FILMES veiculada no Netflix. Trabalhei como pintor de cena e auxiliar a direção de arte, maquiando e produzindo cenário e objetos. 
-        </p>
-        </div>
-
-        <div id="vMoscas" class="imgB fechado">
-          <video  autoplay muted loop>
-            <source src="assets/moscas_vid.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <p class="desc">Moscas é um espetáculo teatral que completou ao todo 3 temporadas entre o período de 2015 e 2016 e foi patrocinado pelo festival Sesc Palco Giratório e Porto Alegre em cena. Em cena, os atores conduziam o público dentro de um antigo casarão aonde reproduziam e comentavam cenas de rituais comuns a cultura hegemônica (natal, nascimento, casamento, baile de debutantes).<br><br>
-          Participei ativamente da montagem, assistencia de arte, cenografia e produção executiva, inclusive tendo sido indicado ao prêmio Açorianos de produção do ano de 2017.
-          </p>
-          </div>
-
-          <div id="vSoundlights" class="imgB fechado">
-            <video  autoplay muted loop>
-              <source src="assets/lago_vid.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <p class="desc">Soundlights (hoje RECREIO) é um conjunto musical indie-psicodélico encabeçado pelo artista compositor Arthur Valandro. Participei do trabalho como diretor de arte, tendo como funções elaborar o conceito visual e estético da banda e do artista atráves da formulação de imagens, símbolos e temáticas. Durante este trabalho idealizei, dirigi, produzi e editei ensaios fotográficos e de vídeos para músicas e revistas da área. Também produzi conteúdo visual para Spotify, Youtube, SoundCloud, Facebook e Instagram. 
-            </p>
-            </div>
-
-            <div id="vCuadrado" class="imgB fechado">
-              <video  autoplay muted loop>
-                <source src="assets/cucu_vid.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-              <p class="desc">&#127917; Galeria é uma interface que dispõe imagens em interação com a movimentação do cursor do usuário. A experimento é sobretudo um treino que explora as possibilidades de disposição de imagens no meio digital utilizando HTML, CSS, JavaScript e a biblioteca de ferramentas de animação GreenSock.
-              </p>
-              </div>
-
-              <div id="vNinfo" class="imgB fechado">
-                <video  autoplay muted loop>
-                  <source src="assets/ninfo_vid.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <p class="desc">&#127917; Galeria é uma interface que dispõe imagens em interação com a movimentação do cursor do usuário. A experimento é sobretudo um treino que explora as possibilidades de disposição de imagens no meio digital utilizando HTML, CSS, JavaScript e a biblioteca de ferramentas de animação GreenSock.
-                </p>
-                </div>
-
-                <div id="vPortfolio" class="imgB fechado">
-                  <video  autoplay muted loop>
-                    <source src="assets/.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                  <p class="desc">&#127917; Galeria é uma interface que dispõe imagens em interação com a movimentação do cursor do usuário. A experimento é sobretudo um treino que explora as possibilidades de disposição de imagens no meio digital utilizando HTML, CSS, JavaScript e a biblioteca de ferramentas de animação GreenSock.
-                  </p>
-                  </div>
-
-                  
-                <div id="vDeliver" class="imgB fechado">
-                  <video  autoplay muted loop>
-                    <source src="assets/" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                  <p class="desc">&#127917; Galeria é uma interface que dispõe imagens em interação com a movimentação do cursor do usuário. A experimento é sobretudo um treino que explora as possibilidades de disposição de imagens no meio digital utilizando HTML, CSS, JavaScript e a biblioteca de ferramentas de animação GreenSock.
-                  </p>
-                  </div>
-    
-    </div>
-  <!-- meus scripts -->
-<script src="script.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-<script src="scriptGSAP.js"></script>
-
-</body>
-</html>
+  .hover-this {
+    width: 100%;
+    padding: 20px 0;
+    display: inline-block;
+  }
+}
