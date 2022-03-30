@@ -16,39 +16,10 @@ let vDeliver = document.getElementById('vDeliver')
 
 gsap.set(('.fechado'), { xPercent: 20, yPercent: 20, opacity: 0 })
 
-
-
-// HOVER PORTFOLIO IN
-function pIn() {
-    gsap.to(aberto, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(vPortfolio, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
-    gsap.set(aberto, { xPercent: 20, yPercent: 20, delay: 0.3 })
-
-    $('.barra').append("<style>.barra::before{content:'content', '//portfolio .com\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0− ❏ ✖' !important}</style>");
-
-
-    vPortfolio.classList.add('aberto');
-    vPortfolio.classList.remove('fechado');
-    aberto.classList.add('fechado');
-    aberto.classList.remove('aberto');
-}
-
-// HOVER PORTFOLIO OUT
-function pOut() {
-    gsap.to(vPortfolio, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
-    gsap.set(vPortfolio, { xPercent: 20, yPercent: 20, delay: 0.3 })
-
-    descanso.classList.add('aberto');
-    descanso.classList.remove('fechado');
-    vPortfolio.classList.add('fechado');
-    vPortfolio.classList.remove('aberto');
-}
-
 // HOVER INSPIRE IN
 function toIn() {
     gsap.to(aberto, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(vInsp, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(vInsp, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(aberto, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     vInsp.classList.add('aberto');
@@ -60,7 +31,7 @@ function toIn() {
 // HOVER INSPIRE OUT
 function toOut() {
     gsap.to(vInsp, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0}, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(vInsp, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     descanso.classList.add('aberto');
@@ -72,7 +43,7 @@ function toOut() {
 // HOVER GALERIA IN
 function gIn() {
     gsap.to(aberto, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(vGaleria, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(vGaleria, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(aberto, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     vGaleria.classList.add('aberto');
@@ -84,7 +55,7 @@ function gIn() {
 // HOVER GALERIA OUT
 function gOut() {
     gsap.to(vGaleria, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(vGaleria, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     descanso.classList.add('aberto');
@@ -96,7 +67,7 @@ function gOut() {
 // HOVER ANA IN
 function anIn() {
     gsap.to(aberto, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(vAna, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(vAna, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(aberto, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     vAna.classList.add('aberto');
@@ -108,7 +79,7 @@ function anIn() {
 // HOVER ANA OUT
 function anOut() {
     gsap.to(vAna, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(vAna, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     descanso.classList.add('aberto');
@@ -120,7 +91,7 @@ function anOut() {
 // HOVER NECRO IN
 function neIn() {
     gsap.to(aberto, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(vNecro, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(vNecro, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(aberto, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     vNecro.classList.add('aberto');
@@ -132,7 +103,7 @@ function neIn() {
 // HOVER NECRO OUT
 function neOut() {
     gsap.to(vNecro, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(vNecro, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     descanso.classList.add('aberto');
@@ -144,7 +115,7 @@ function neOut() {
 // HOVER MOSCAS IN
 function mIn() {
     gsap.to(aberto, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(vMoscas, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(vMoscas, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(aberto, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     vMoscas.classList.add('aberto');
@@ -156,7 +127,7 @@ function mIn() {
 // HOVER MOSCAS OUT
 function mOut() {
     gsap.to(vMoscas, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(vMoscas, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     descanso.classList.add('aberto');
@@ -168,7 +139,7 @@ function mOut() {
 // HOVER SD IN
 function sdIn() {
     gsap.to(aberto, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(vSoundlights, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(vSoundlights, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(aberto, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     vSoundlights.classList.add('aberto');
@@ -180,7 +151,7 @@ function sdIn() {
 // HOVER SD OUT
 function sdOut() {
     gsap.to(vSoundlights, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(vSoundlights, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     descanso.classList.add('aberto');
@@ -192,7 +163,7 @@ function sdOut() {
 // HOVER CUADRADO IN
 function cuIn() {
     gsap.to(aberto, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(vCuadrado, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(vCuadrado, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(aberto, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     vCuadrado.classList.add('aberto');
@@ -204,7 +175,7 @@ function cuIn() {
 // HOVER CUADRADO OUT
 function cuOut() {
     gsap.to(vCuadrado, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(vCuadrado, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     descanso.classList.add('aberto');
@@ -216,7 +187,7 @@ function cuOut() {
 // HOVER NINFO IN
 function ninIn() {
     gsap.to(aberto, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(vNinfo, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(vNinfo, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(aberto, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     vNinfo.classList.add('aberto');
@@ -228,7 +199,7 @@ function ninIn() {
 // HOVER NINFO OUT
 function ninOut() {
     gsap.to(vNinfo, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(vNinfo, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     descanso.classList.add('aberto');
@@ -240,7 +211,7 @@ function ninOut() {
 // HOVER DELIVER IN
 function ditIn() {
     gsap.to(aberto, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(vDeliver, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(vDeliver, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(aberto, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     vDeliver.classList.add('aberto');
@@ -252,7 +223,7 @@ function ditIn() {
 // HOVER DELIVER OUT
 function ditOut() {
     gsap.to(vDeliver, { duration: 0.3, xPercent: -20, yPercent: -20, opacity: 0 })
-    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0.1 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
+    gsap.fromTo(descanso, { duration: 0.3, xPercent: 60, yPercent: 60, opacity: 0 }, { duration: 0.3, xPercent: 0, yPercent: 0, opacity: 1 })
     gsap.set(vDeliver, { xPercent: 20, yPercent: 20, delay: 0.3 })
 
     descanso.classList.add('aberto');
