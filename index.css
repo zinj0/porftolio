@@ -180,6 +180,7 @@ nav {
   width: auto;
   height: 3vw;
   margin-left: 2.5vw;
+  transition: all 200ms ease;
 }
 .h2hover:hover + .ativos {
   transition: all 200ms ease;
