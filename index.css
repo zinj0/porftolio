@@ -254,7 +254,7 @@ path {
   content: "";
   height: 280%;
   left: -50%;
-  opacity: 0.2;
+  opacity: 0.3;
   position: fixed;
   top: -100%;
   width: 300%;
@@ -310,7 +310,7 @@ a {
   transition: all 0.3s ease;
 }
 
-span {
+/* span {
   display: inline-block;
   font-family: 'Russo One', sans-serif;
   font-weight: 400;
@@ -319,37 +319,44 @@ span {
   text-transform: uppercase;
   pointer-events: none;
   transition: transform 0.1s linear;
-}
+} */
 
 .cursor {
   pointer-events: none;
   position: fixed;
-  padding: 0.3rem;
-  background-color: #fff;
+  padding: 0.7vw;
+  background-color: rgba(233, 89, 89, 0.938);
   border-radius: 50%;
-  mix-blend-mode: difference;
+  mix-blend-mode:multiply;
   transition: transform 0.3s ease;
+  z-index: 100;
 }
 
-.hover-this:hover ~ .cursor {
-  transform:translate(-50%, -50%) scale(8);
+.cursor:after {
+  position: fixed;
+  content: "";
+  width: 4vw;
+  height: 4vw;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(233, 89, 89, 0.938);
+  border-radius: 100%;
+  mix-blend-mode:multiply;
+  transition: all 0.3s ease;
+  z-index: 100;
+  animation: cursorexp 5s linear infinite;
 }
 
-@media(min-width: 900px) {
-  nav {
-    display: flex;
-    justify-content: space-around;
+@keyframes cursorexp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
   }
-}
-
-@media(max-width: 900px) {
-  nav {
-    top: 30%;
+  10% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.5); 
   }
-  
-  .hover-this {
-    width: 100%;
-    padding: 20px 0;
-    display: inline-block;
+  20%, 100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1) ;
   }
 }
