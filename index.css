@@ -245,7 +245,7 @@ path {
 
 .grainy {
   height: 100vh;
-  background-image: url("assts/graintxt.jpg");
+  background-image: url("assets/graintxt.jpg");
 }
 
 .grainy:after {
@@ -275,28 +275,6 @@ path {
 
 /* CUSTOM CURSOR */
  
-/* * {
-  cursor: none;
-  margin:0;
-  padding:0;
-}
-
-.cursor {
-  content:"";
-  position:absolute;
-  z-index:999;
-  top:var(--y);
-  left:var(--x);
-  right:0;
-  bottom:0; 
-  width:4em;
-  height:4em;
-  border-radius:50%;
-  transform:translate(-50%,-50%);
-  background:rgb(0, 255, 85);
-  mix-blend-mode:difference;
-} */
-
 html, body {
   margin: 0;
   padding: 0;
@@ -305,21 +283,6 @@ html, body {
 a {
   cursor: none;
 }
-
-.hover-this {
-  transition: all 0.3s ease;
-}
-
-/* span {
-  display: inline-block;
-  font-family: 'Russo One', sans-serif;
-  font-weight: 400;
-  color: #fff;
-  font-size: 36px;
-  text-transform: uppercase;
-  pointer-events: none;
-  transition: transform 0.1s linear;
-} */
 
 .cursor {
   pointer-events: none;
