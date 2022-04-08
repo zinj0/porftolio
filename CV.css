@@ -1,0 +1,300 @@
+/*#region *****FONTES**/
+
+h1 {
+    font-family: 'Baskervville', serif;
+    color: black;
+    font-size: 45px;
+    line-height: 20px; 
+}
+h2 {
+    font-family: 'Baskervville', serif;
+    color: rgb(135,135,135);
+    font-size: 36px;
+    line-height: 20px; 
+}
+h3 {
+    font-family: 'Baskervville', serif;
+    color: rgb(135,135,135);
+    font-size: 30px;
+    line-height: 20px; 
+}
+h4 {
+    font-family: 'Inter', sans-serif;
+    color: black; 
+    font-size: 14px; 
+}
+p {
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 20px;
+    line-height: 150%;
+    margin-top: 0px; 
+}
+.pformacao {
+    line-height: 150%;
+    
+    padding-left:20px;
+    border-radius: 16px; 
+}
+.plista {
+    line-height: 200%; 
+}
+.p2form {
+    color: rgb(135,135,135);
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 70px; 
+}
+.p2hab {
+    color: rgb(135,135,135);
+    font-size: 16px;
+    line-height: 0px;
+}
+
+/*#endregion*/
+
+/*#region *****SINALIZAÇÃO AMARELA**/
+
+#IAUFRGS {
+    width: 390px;
+    background-color: #F2EB79;
+}
+#ed4 {
+    width: 308px;
+    background-color: #F2EB79;
+}
+#tecna {
+    width: 510px
+}
+#CCS {
+    width: 360px;
+}
+#WDFreelance {
+    width: 225px;
+    background-color: #F2EB79;
+}
+#dirarte {
+    width: 176px;
+    background-color: #F2EB79;
+}
+/*#endregion*/
+
+/*#region *****CAIXAS**/
+
+body {
+    background-color: #FCFCF6;
+}    
+figure {
+    margin: 0px; 
+}
+#headesquerda {
+    height: 282px;
+    width: 141px;
+
+    position: absolute;
+    top: 60px;
+    left: 300px;
+}
+#software {
+    height: 282px;
+    width: 141px;
+
+    position: absolute;
+    top: 210px;
+}
+#headdireita {
+    text-align: justify;
+
+    height: 282px;
+    width: 629px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 0px;
+
+    position: absolute;
+    top: 80px;
+    left: 550px;
+}
+#formacao {
+    height: 282px;
+    width: 600px;
+
+    position: absolute;
+    top: 565px;
+    left: 300px;
+
+    margin-bottom: 150px;
+}
+#Habilidades {
+    height: 282px;
+    width: 350px;
+
+    position: absolute;
+    top: 565px;
+    left: 1000px;
+
+    margin-bottom: 150px;
+}
+#experiencia {
+    height: 282px;
+    width: 600px;
+
+    position: absolute;
+    top: 1110px;
+    left: 300px;
+
+    margin-bottom: 150px;
+
+}
+#contato {
+    height: 282px;
+    width: 350px;
+
+    position: absolute;
+    top: 1120px;
+    left: 1000px;
+
+    margin-bottom: 150px;
+}
+#rodape {
+    height: 300px;
+    width: 300px;
+
+    position: absolute;
+    top: 1800px;
+}
+
+/*#endregion*/
+
+/*#region *****IMAGENS**/
+
+#perfil {
+    height: 200px;
+    width: 200px;
+    margin-left: 0px;
+    padding: 0px;
+    
+    position: absolute;
+    z-index: 11;
+ }
+ #perfilpiada {
+    height: 200px;
+    width: 200px;
+    margin-left: 0px;
+    padding: 0px;
+    
+    position: absolute;
+    z-index: 10;
+ }
+ #perfil:hover {
+     opacity: 0;
+ }
+ 
+/*#endregion*/
+
+/*#region *****ICONES DE CONTATO**/
+.icones {
+    font-size: 200%;
+    color: rgb(135,135,135);
+    margin-top: -10px;
+    padding: 10px;
+    border-radius: 20px
+}
+.icones:hover {
+    color: black;
+    background-color: #F2EB79;
+}
+
+/*#endregion*/
+
+/*#region *****CAIXAS ESTÉTICAS**/
+
+.caixas {
+    background-color: #B6E0EF;
+}
+#topleft1 {
+    width: 200px;
+    height: 200px;
+
+    position: absolute;
+    z-index: -2;
+    top: -10px;
+    left: 220px ;
+}
+#topright1 {
+    width: 180px;
+    height: 70px;
+
+    position: absolute;
+    z-index: 5;
+    top: -10px;
+    left: 1090px ;
+}
+#topright2 {
+    width: 70px;
+    height: 180px;
+
+    position: absolute;
+    z-index: 5;
+    top: -10px;
+    left: 1230px ;
+}
+#center1 {
+    width: 20px;
+    height: 60px;
+
+    position: absolute;
+    z-index: 5;
+    top: 550px;
+    left: 920px ;
+}
+#center2 {
+    width: 80px;
+    height: 20px;
+
+    position: absolute;
+    z-index: 5;
+    top: 550px;
+    left: 890px ;
+}
+#centerright {
+    width: 100px;
+    height: 20px;
+
+    position: absolute;
+    z-index: 5;
+    top: 870px;
+    left: 1200px ;
+}
+#centerleft {
+    width: 100px;
+    height: 20px;
+
+    position: absolute;
+    z-index: 5;
+    top: 1090px;
+    left: 220px ;
+}
+#bottomcenter {
+    width: 70px;
+    height: 70px;
+
+    position: absolute;
+    z-index: 5;
+    top: 1540px;
+    left: 910px ;
+}
+
+/*#endregion*/
+
+/*#region *****CURSOR & SELEÇÃO**/
+
+* {
+    cursor: url(cursor.png), auto;
+}
+::selection {
+    color: rgb(187, 1, 1);
+    background:#B6E0EF;
+  }
+
+/*#endregion*/
