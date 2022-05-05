@@ -22,7 +22,6 @@ video {
   border:2px solid rgb(120, 0, 233);
   width: 100%;
 }
-
 #intro {
   position: fixed;
   top: 2vh;
@@ -85,17 +84,12 @@ video {
 
   box-shadow: 2px 11px 43px -8px rgba(233, 89, 89, 0.849);
   z-index: 2;
-  /* animation: pOut 0.2s ease; */
+  transition: all 0.2s ease;
 }
 @keyframes pIn {
   0%{box-shadow: 2px 11px 43px -8px rgba(233, 89, 89, 0.849);}
   50%{box-shadow: 3px 12px 44px -6px rgba(233, 89, 89, 0.938);}
   100%{box-shadow: 4px 13px 45px -4px rgba(233, 89, 89, 1);}
-}
-@keyframes pOut {
-  0%{box-shadow: 4px 13px 45px -4px rgba(233, 89, 89, 1);}
-  50%{box-shadow: 3px 12px 44px -6px rgba(233, 89, 89, 0.938);}
-  100%{box-shadow: 2px 11px 43px -8px rgba(233, 89, 89, 0.849);}
 }
 #pintura:hover {
   animation: pIn 0.2s ease;
@@ -244,7 +238,7 @@ path {
 
 /* grain */
 
-.grainy {
+/* .grainy {
   height: 100vh;
   background-image: url("assets/graintxt.jpg");
 }
@@ -272,10 +266,32 @@ path {
   70% { transform:translate(0%, 15%) }
   80% { transform:translate(3%, 35%) }
   90% { transform:translate(-10%, 10%) }
-}
+} */
 
 /* CUSTOM CURSOR */
  
+/* * {
+  cursor: none;
+  margin:0;
+  padding:0;
+}
+
+.cursor {
+  content:"";
+  position:absolute;
+  z-index:999;
+  top:var(--y);
+  left:var(--x);
+  right:0;
+  bottom:0; 
+  width:4em;
+  height:4em;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+  background:rgb(0, 255, 85);
+  mix-blend-mode:difference;
+} */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -283,6 +299,10 @@ html, body {
 }
 a {
   cursor: none;
+}
+
+.hover-this {
+  transition: all 0.3s ease;
 }
 
 .cursor {
@@ -323,4 +343,196 @@ a {
     opacity: 0;
     transform: translate(-50%, -50%) scale(1) ;
   }
+}
+
+
+/* MOBILE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ MOBILE @@@@@@@@@@@@@@@@@@@@@@@ MOBILE @@@@@@@@@@@@@@@@@@@@@@ */
+
+@media (orientation: portrait) {
+
+  .cursor {
+    display: none;
+  }
+
+  #pinturaBox {
+    display: none;
+  }
+
+  #descansoTxt {
+    display: none;
+  }
+
+  body {
+    overflow:scroll;
+    background-color: #f1c3c9;
+  }
+
+  #intro {
+  top: 2vh;
+  left: 0vw;
+  font-size: 5vw;
+  margin: 2vw;
+  position: absolute;
+  width: 100vw;
+}
+
+.icone {
+  font-size: 9vw;
+  left: 28.3%;
+  top: 11vh;
+}
+
+.icone:active {
+  transform:scale(0.9);
+}
+
+#projectsContainer {
+  position: absolute;
+}
+
+nav {
+display: none;
+}
+
+/* .h1projs {
+  display: block;
+  width: 100%;
+}
+
+.projH2 {
+  font-family: 'Syncopate';
+  font-size: 9vw;
+  margin-bottom: 27vw;
+  margin-left: 0;
+  line-height: 90%;
+  z-index: 10;
+  overflow-y: scroll;
+
+  height: 25vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+} */
+
+.iconeAux {
+  display: none;
+}
+
+.emconstrucao {
+  display: none;
+}
+
+.desc {
+  display: none;
+}
+
+.fechado {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
+
+video {
+  height: 50vw;
+  min-width: 100% !important;
+  border: 0px;
+  background-color:rgb(120, 0, 233);
+  height: fit-content;
+}
+
+.imgB {
+  position: relative;
+  left: 0vw;
+  top: 55vw;
+  width: 100vw;
+
+
+}
+
+.desc {
+  left: 58vw;
+  top: 33vw;
+
+  width: 100%;
+  margin-top: 5%;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1vw;
+  text-align: justify;
+  text-justify: inter-word;
+  color: rgb(120, 0, 233);
+}
+
+.mobileContrast {
+  background-color: rgb(120, 0, 233);
+  color: rgb(223, 193, 193);
+}
+
+/* TÍTULOS : before */
+
+#vToInsp:before {
+  content: "to inspire:";
+  font-family: 'Syncopate';
+  font-size: 9vw;
+  color: rgb(120, 0, 233);
+}
+
+#vGaleria:before {
+  content: "galeria";
+  font-family: 'Syncopate';
+  font-size: 9vw;
+  color:#f1c3c9;
+  background-color: rgb(120, 0, 233);
+}
+
+#vNinfo:before {
+  content: "ninfomaniaca";
+  font-family: 'Syncopate';
+  font-size: 9vw;
+  color: rgb(120, 0, 233);
+}
+
+#vMoscas:before {
+  content: "moscas";
+  font-family: 'Syncopate';
+  font-size: 9vw;
+  color: rgb(120, 0, 233);
+}
+
+#vSoundlights:before {
+  content: "soundlights";
+  font-family: 'Syncopate';
+  font-size: 9vw;
+  color: rgb(120, 0, 233);
+}
+
+#vAna:before {
+  content: "ana. s/ título";
+  font-family: 'Syncopate';
+  font-size: 9vw;
+  color: rgb(120, 0, 233);
+}
+
+#vNecro:before {
+  content: "necrópolis";
+  font-family: 'Syncopate';
+  font-size: 9vw;
+  color: rgb(120, 0, 233);
+}
+
+#vCuadrado:before {
+  content: "mi cuadrado";
+  font-family: 'Syncopate';
+  font-size: 9vw;
+  color: rgb(120, 0, 233);
+}
+
+#telaDescanso {
+  position: relative;
+}
+
+
+
+
 }
