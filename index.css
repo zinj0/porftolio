@@ -444,6 +444,7 @@ video {
   left: 0vw;
   top: 55vw;
   width: 100vw;
+  margin-bottom: 30vw;
 
 
 }
@@ -475,6 +476,10 @@ video {
   font-family: 'Syncopate';
   font-size: 9vw;
   color: rgb(120, 0, 233);
+
+  position: absolute;
+  width: 100vw;
+  transform: translateY(-80%)
 }
 
 #vGaleria:before {
@@ -483,6 +488,10 @@ video {
   font-size: 9vw;
   color:#f1c3c9;
   background-color: rgb(120, 0, 233);
+
+  position: absolute;
+  width: 100vw;
+  transform: translateY(-80%)
 }
 
 #vNinfo:before {
@@ -490,6 +499,10 @@ video {
   font-family: 'Syncopate';
   font-size: 9vw;
   color: rgb(120, 0, 233);
+
+  position: absolute;
+  width: 100vw;
+  transform: translateY(-80%)
 }
 
 #vMoscas:before {
@@ -497,6 +510,10 @@ video {
   font-family: 'Syncopate';
   font-size: 9vw;
   color: rgb(120, 0, 233);
+
+  position: absolute;
+  width: 100vw;
+  transform: translateY(-80%)
 }
 
 #vSoundlights:before {
@@ -504,6 +521,10 @@ video {
   font-family: 'Syncopate';
   font-size: 9vw;
   color: rgb(120, 0, 233);
+
+  position: absolute;
+  width: 100vw;
+  transform: translateY(-80%)
 }
 
 #vAna:before {
@@ -511,6 +532,10 @@ video {
   font-family: 'Syncopate';
   font-size: 9vw;
   color: rgb(120, 0, 233);
+
+  position: absolute;
+  width: 100vw;
+  transform: translateY(-80%)
 }
 
 #vNecro:before {
@@ -518,6 +543,10 @@ video {
   font-family: 'Syncopate';
   font-size: 9vw;
   color: rgb(120, 0, 233);
+
+  position: absolute;
+  width: 100vw;
+  transform: translateY(-80%)
 }
 
 #vCuadrado:before {
@@ -525,6 +554,10 @@ video {
   font-family: 'Syncopate';
   font-size: 9vw;
   color: rgb(120, 0, 233);
+
+  position: absolute;
+  width: 100vw;
+  transform: translateY(-80%)
 }
 
 #telaDescanso {
