@@ -436,7 +436,6 @@ video {
   height: 50vw;
   min-width: 100% !important;
   border: 0px;
-  background-color:rgb(120, 0, 233);
   height: fit-content;
 }
 
